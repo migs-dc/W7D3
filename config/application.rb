@@ -9,10 +9,10 @@ Bundler.require(*Rails.groups)
 module W7d3
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.1
+    config.load_defaults 5.2
     config.generators do |g|
       g.test_framework :rspec,
-        :fixtures => false,
+        :fixtures => true,
         :view_specs => false,
         :helper_specs => false,
         :routing_specs => false,
